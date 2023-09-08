@@ -1,0 +1,337 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------*/
+
+:root {
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/*--------------------HOVER effects-----------------------*/
+
+.purchase-btn:hover, .purchase-btn:focus {
+    background-color: rgba(10, 56, 10, 0.877) !important;
+}
+
+.purchase-btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+#Footer p a:hover, #Footer p a:focus {
+    color: brown !important;
+}
+
+/*---------------------GENERAL CSS------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: var(--Cream);
+}
+
+h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+#Parfum-Section {
+    background-color: whitesmoke;
+}
+
+/*---------------------320px------------------------*/
+
+@media all and (min-width: 320px) {
+
+    #Desktop-Parfum {
+        display: none;
+    }
+
+    #principal {
+        width: 100%;
+        height: 100vh;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    #Parfum-Section {
+        width: 90%;
+        display: flex; flex-direction: column; justify-content: stretch; align-items: center;
+        padding-left: 0em;
+        padding-right: 0em;
+        border-radius: 0.5em;
+        overflow: hidden;
+    }
+
+    #Product-Pictures-Parfum {
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    #Mobile-Parfum {
+        width: 100%;
+        margin-bottom: 0.5em !important;
+    }
+
+    .caption {
+        font-size: 0.7em;
+        color: var(--DarkGrayishBlue);
+        letter-spacing: 0.2em;
+        margin-bottom: 0.5em;
+    }
+
+    #Mobile-Parfum img {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+    #Product-Info-Parfum {
+        padding: 0em 1em 1em 1em;
+    }
+
+    #Product-Info-Parfum p {
+        color: var(--DarkGrayishBlue)
+    }
+
+    .product-description {
+        font-size: 0.75em;
+    }
+
+    .prices {
+        display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: var(--VeryDarkBlue);
+    }
+
+    h3 {
+        color: var(--DarkCyan);
+    }
+
+    h4 {
+        font-size: 0.8em;
+        text-decoration: line-through;
+        margin-left: 1.5em;
+        color: var(--DarkGrayishBlue);
+    }
+
+    .purchase-div {
+        width: 100%;
+        display: flex; flex-direction: row; justify-content: center; align-items: center;
+    }
+
+    .purchase-btn {
+        width: 100%;
+        display: flex; flex-direction: row; justify-content: center; align-items: center;
+        background-color: var(--DarkCyan);
+        border: 0;
+        font-size: 0.8em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+    }
+
+    .purchase-btn figure {
+        width: 5%;
+        max-width: 5%;
+        margin-right: 0.5em;
+        margin-bottom: 0em;
+    }
+
+    .purchase-btn figure img {
+        width: 100%;
+    }
+
+    #Footer {
+        display: flex; flex-direction: row; justify-content: center; align-items: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    #Attribution {
+        width: 95%;
+        background-color: var(--White);
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        border-radius: 2em;
+    }
+
+    #Footer p {
+        margin-bottom: 0;
+        font-size: 0.6em;
+        color: var(--DarkCyan);
+        
+    }
+
+    #Footer p a {
+        text-decoration: none;
+        color: var(--VeryDarkBlue)
+    }
+
+}
+
+/*-------------------END: 320px---------------------*/
+
+/*---------------------480px------------------------*/
+
+@media all and (min-width: 480px) {
+
+    #Parfum-Section {
+        width: 75%;
+    }
+
+    #Product-Info-Parfum {
+        padding: 0em 1.5em 1.5em 1.5em;
+    }
+
+    .purchase-btn {
+        width: 100%;
+    }
+
+    #Attribution {
+        width: 70%;
+    }
+    
+}
+
+/*-------------------END: 480px---------------------*/
+
+/*-----------------------576px----------------------*/
+
+@media all and (min-width: 576px) {
+
+    #Parfum-Section {
+        width: 60%;
+    }
+
+    #Attribution {
+        width: 55%;
+    }
+
+}
+
+/*-------------------END: 576px---------------------*/
+
+/*-----------------------768px----------------------*/
+
+@media all and (min-width: 768px) {
+
+    #Parfum-Section {
+        width: 50%;
+    }
+
+    #Attribution {
+        width: 45%;
+    }
+
+}
+
+/*-------------------END: 768px---------------------*/
+
+/*-----------------------1024px---------------------*/
+
+@media all and (min-width: 1024px) {
+
+    #principal {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #Parfum-Section {
+        width: 45%;
+        flex-direction: row;
+    }
+
+    #Product-Pictures-Parfum {
+        width: 50%;
+        min-width: 50%;
+    }
+
+    #Mobile-Parfum {
+        display: none;
+    }
+
+    #Desktop-Parfum {
+        width: 100%;
+        margin-bottom: 0em;
+        display: flex;
+    }
+
+    #Desktop-Parfum img {
+        width: 100%;
+    }
+
+    #Attribution {
+        width: 40%;
+    }
+
+    #Footer p {
+        font-size: 0.8em;
+    }
+}
+
+/*-------------------END: 1024px---------------------*/
+
+/*-----------------------1280px---------------------*/
+
+@media all and (min-width: 1280px) {
+
+
+    .caption, .product-description, .prices, .purchase-div {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .caption {
+        font-size: 0.9em;
+    }
+
+    #Product-Info-Parfum h2 {
+        font-size: 2em;
+    }
+
+    .product-description {
+        font-size: 0.9em;
+    }
+
+    #Attribution {
+        width: 45%;
+    }
+
+    #Footer p {
+        font-size: 1em;
+    }
+
+}
+
+/*-------------------END: 1280px---------------------*/
+
+/*----------------------1440px-----------------------*/
+
+@media all and (min-width: 1440px) {
+
+    .caption {
+        font-size: 1em;
+    }
+
+    #Product-Info-Parfum h2 {
+        font-size: 2.3em;
+    }
+
+    .product-description {
+        font-size: 1em;
+    }
+
+    #Attribution {
+        width: 35%;
+    }
+
+}
+
+/*-------------------END: 1440px---------------------*/
